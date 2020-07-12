@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 10-07-2020 a las 20:53:49
+-- Tiempo de generación: 12-07-2020 a las 08:51:44
 -- Versión del servidor: 10.4.11-MariaDB
 -- Versión de PHP: 7.2.28
 
@@ -31,12 +31,19 @@ SET time_zone = "+00:00";
 CREATE TABLE `carrera` (
   `id` int(11) NOT NULL,
   `id_facultad` int(11) NOT NULL,
-  `nombre` varchar(50) DEFAULT NULL,
+  `nombre` varchar(100) DEFAULT NULL,
   `id_modalidad` varchar(5) DEFAULT NULL,
   `admision` varchar(20) DEFAULT NULL,
   `grado` varchar(20) DEFAULT NULL,
-  `acreditacion` varchar(20) DEFAULT 'sin acreditacion' CHECK (`acreditacion` in ('sin acreditacion','acreditada','revision','pendiente'))
+  `acreditacion` varchar(20) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `carrera`
+--
+
+INSERT INTO `carrera` (`id`, `id_facultad`, `nombre`, `id_modalidad`, `admision`, `grado`, `acreditacion`) VALUES
+(1, 1, 'Ingenieria de sistemas', '1', '1', '1', 'sin acreditacion');
 
 -- --------------------------------------------------------
 
@@ -46,8 +53,16 @@ CREATE TABLE `carrera` (
 
 CREATE TABLE `facultad` (
   `id` int(11) NOT NULL,
-  `nombre` varchar(30) DEFAULT NULL
+  `nombre` varchar(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `facultad`
+--
+
+INSERT INTO `facultad` (`id`, `nombre`) VALUES
+(1, 'Tecnologia'),
+(2, 'Derecho');
 
 -- --------------------------------------------------------
 
@@ -66,6 +81,13 @@ CREATE TABLE `persona` (
   `cu` varchar(10) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Volcado de datos para la tabla `persona`
+--
+
+INSERT INTO `persona` (`id`, `nombre`, `apellido_paterno`, `apellido_materno`, `carnet_identidad`, `celulcar`, `correo`, `cu`) VALUES
+(1, 'Jose Gael', 'Choque', ' Serrano', '7895462', '78665874', 'gaelelpapi@gmail.com', '1561-15616');
+
 -- --------------------------------------------------------
 
 --
@@ -79,6 +101,13 @@ CREATE TABLE `persona_beca` (
   `id_tipo_beca` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Volcado de datos para la tabla `persona_beca`
+--
+
+INSERT INTO `persona_beca` (`id`, `id_persona`, `id_carrera`, `id_tipo_beca`) VALUES
+(1, NULL, NULL, NULL);
+
 -- --------------------------------------------------------
 
 --
@@ -91,6 +120,13 @@ CREATE TABLE `tipo_becas` (
   `monto` double(5,3) DEFAULT NULL,
   `detalle` varchar(300) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `tipo_becas`
+--
+
+INSERT INTO `tipo_becas` (`id`, `nombre`, `monto`, `detalle`) VALUES
+(1, NULL, NULL, NULL);
 
 --
 -- Índices para tablas volcadas
@@ -138,31 +174,31 @@ ALTER TABLE `tipo_becas`
 -- AUTO_INCREMENT de la tabla `carrera`
 --
 ALTER TABLE `carrera`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de la tabla `facultad`
 --
 ALTER TABLE `facultad`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de la tabla `persona`
 --
 ALTER TABLE `persona`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de la tabla `persona_beca`
 --
 ALTER TABLE `persona_beca`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de la tabla `tipo_becas`
 --
 ALTER TABLE `tipo_becas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- Restricciones para tablas volcadas
