@@ -24,7 +24,7 @@ El problema es una simulacion de un sistema de becas con varias bases de datos.
 *  ### Etapa 4 
     En esta etapa se diseñaron los formularios los cuales serian nuestra interfaz grafica para la incersiones de informacion.
  * ### Etapa 5 
-    En esta etapa se crearon las consultas y en base a los requerimientos del problema
+    En esta etapa se crearon las consultas en base a los requerimientos del problema
  * ### Etapa 6 
     En esta etapa se diseñaron los informes en base a las consultas.
  * ### Etapa 7
