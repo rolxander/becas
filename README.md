@@ -6,12 +6,12 @@
 
 ## Problema
 Se necesita un sistema de para el pago de becas universitarias, el cual debe generar informes de pagos por facultades y carreras. Tambien debe generar una planilla de pagos para los estudiantes debido a la prioridad esta sistema debe generarse los mas rapido posible 
-## Objectivos
+## Objetivos
  * El objetivo del trabajo fue aprender a trabajar en equipo
  * El uso de tecnologias de base de datos.
 ## Contexto de trabajo
 El problema es una simulacion de un sistema de becas con varias bases de datos.
-## Solucion
+## Solución
 * ### Etapa 1
     En esta etapa del trabajo se hizo la intalacion de tres tecnologias de base de datos [**PostgreSQL**](https://www.postgresql.org/), [**MySQL**](https://www.mysql.com/) y [**Access**](https://www.microsoft.com/es-es/microsoft-365/access) 
 * ### Etapa 2
