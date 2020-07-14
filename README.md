@@ -1,4 +1,9 @@
 # Trabajo Grupal SIS145
+## Integrantes
+    Jose Gael Choque Serrano
+    Juan Jose Perez Yucra
+    Yufan Condori Leon
+
 ## Problema
 Se necesita un sistema de para el pago de becas universitarias, el cual debe generar informes de pagos por facultades y carreras. Tambien debe generar una planilla de pagos para los estudiantes debido a la prioridad esta sistema debe generarse los rapido posible 
 ## Objectivos
