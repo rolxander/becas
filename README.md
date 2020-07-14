@@ -5,7 +5,7 @@
     Yufan Condori Leon
 
 ## Problema
-Se necesita un sistema de para el pago de becas universitarias, el cual debe generar informes de pagos por facultades y carreras. Tambien debe generar una planilla de pagos para los estudiantes debido a la prioridad esta sistema debe generarse los rapido posible 
+Se necesita un sistema de para el pago de becas universitarias, el cual debe generar informes de pagos por facultades y carreras. Tambien debe generar una planilla de pagos para los estudiantes debido a la prioridad esta sistema debe generarse los mas rapido posible 
 ## Objectivos
  * El objetivo del trabajo fue aprender a trabajar en equipo
  * El uso de tecnologias de base de datos.
