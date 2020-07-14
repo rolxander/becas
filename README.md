@@ -23,4 +23,4 @@ El problema es una simulacion de un sistema de becas con varias bases de datos.
  * ### Etapa 6 
     En esta etapa se diseñaron los informes en base a las consultas.
  * ### Etapa 7
-    EN esta etapa se hicieron las pruebas con datos 
+    En esta etapa se hicieron las pruebas con datos 
